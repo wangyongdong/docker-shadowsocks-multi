@@ -2,7 +2,7 @@
 #
 # Version:1.0.0
 
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER wangyongdong <wydchn@gmail.com>
 
 RUN apt-get -qq update && \
