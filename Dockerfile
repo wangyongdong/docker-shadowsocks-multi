@@ -18,6 +18,10 @@ RUN wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz && \
     ./configure && make -j2 && make install && \
     ldconfig
 
+#配置时区
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
+dpkg-reconfigure -f noninteractive tzdata
+
 ADD shadowsocks.json /etc/
 ADD start.sh /usr/local/bin/start.sh
 RUN chmod 755 /usr/local/bin/start.sh
