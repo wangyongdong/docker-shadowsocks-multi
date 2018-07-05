@@ -1,7 +1,7 @@
-echo "========================================================================"
-echo " You can now connect to this ShadowSocks server:"
+echo "============================================="
+echo " You can connect to this ShadowSocks Server: "
 cat /etc/shadowsocks.json
-echo " Please remember the password!"
-echo "========================================================================"
+echo " Please remeber the password!"
+echo "============================================="
 
 ssserver -c /etc/shadowsocks.json
