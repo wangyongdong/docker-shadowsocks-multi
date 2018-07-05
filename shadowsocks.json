@@ -3,8 +3,8 @@
   "local_address": "127.0.0.1",
   "local_port":1080,
   "port_password":{
-    "1989": "xxxpass",
-    "1022": "xxxpass"
+    "11123": "23pass",
+    "11124": "24pass"
   },
   "timeout":300,
   "method":"aes-256-cfb",
